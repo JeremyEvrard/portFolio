@@ -441,23 +441,26 @@ ________________________________________________________________________________
 */
 /* line 2, ../scss/_header.scss */
 header .riban {
+  position: relative;
   width: 304px;
   margin: auto;
   display: block;
+  z-index: 10;
 }
-/* line 8, ../scss/_header.scss */
+/* line 9, ../scss/_header.scss */
 header nav {
   position: absolute;
   top: 0;
   padding: 1em;
   width: 100%;
+  z-index: 2;
 }
-/* line 13, ../scss/_header.scss */
+/* line 15, ../scss/_header.scss */
 header nav li {
   list-style-type: none;
   display: inline-block;
 }
-/* line 16, ../scss/_header.scss */
+/* line 18, ../scss/_header.scss */
 header nav li a {
   color: black;
   font-size: 2em;
@@ -469,19 +472,25 @@ header nav li a {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 23, ../scss/_header.scss */
+/* line 25, ../scss/_header.scss */
 header nav li a:hover {
   text-decoration: underline;
   color: #aa0202;
 }
-/* line 28, ../scss/_header.scss */
+/* line 30, ../scss/_header.scss */
 header nav li:nth-child(3) a {
   margin-left: 304px;
 }
-/* line 32, ../scss/_header.scss */
+/* line 34, ../scss/_header.scss */
 header nav ul {
   width: 1264px;
   margin: auto;
+}
+
+/* line 40, ../scss/_header.scss */
+.banniere {
+  width: 100%;
+  position: absolute;
 }
 
 /* line 10, ../scss/main.scss */
