@@ -5,6 +5,7 @@
  *    user zoom.
  */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300italic);
 /* line 9, ../scss/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -470,7 +471,7 @@ header .riban a {
 header nav {
   position: relative;
   top: 0;
-  padding: 1em;
+  padding: 1.5em 0;
   width: 100%;
   background-color: white;
 }
@@ -528,7 +529,7 @@ header nav ul {
   list-style-type: none;
   display: inline-block;
   width: 480px;
-  padding: 1em 0;
+  padding: 1.5em 0;
   font-size: 2em;
   text-align: center;
 }
@@ -537,7 +538,35 @@ header nav ul {
   margin-left: 304px;
 }
 
-/* line 12, ../scss/main.scss */
+/* line 1, ../scss/_presentation.scss */
+.presentation {
+  width: 1264px;
+  margin: auto;
+}
+/* line 3, ../scss/_presentation.scss */
+.presentation:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 8, ../scss/_presentation.scss */
+.presentation > * {
+  float: left;
+}
+
+/* line 12, ../scss/_presentation.scss */
+.accroche {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: italic;
+  width: 464px;
+  float: left;
+  margin-left: 80px;
+  font-size: 2em;
+  margin-top: 6em;
+}
+
+/* line 15, ../scss/main.scss */
 body {
   width: 100%;
   font-family: 'Open Sans', sans-serif;

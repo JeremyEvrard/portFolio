@@ -1,0 +1,21 @@
+.presentation{
+    @include center_body();
+    &:after{
+        content:'';
+        display:block;
+        clear:both;
+    }
+    &>*{
+        float:left;
+    }
+}
+.accroche{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-style: italic;
+    width:$col_6;
+    float:left;
+    margin-left:80px;
+    font-size: 2em;
+    margin-top:6em;
+}
