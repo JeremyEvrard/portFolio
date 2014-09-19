@@ -1,0 +1,37 @@
+header{
+    .riban{
+        //position:absolute;
+        width:304px;
+        margin:auto;    
+        display:block;
+    }
+    nav{
+        position:absolute;
+        top:0;
+        padding: 1em;
+        width:100%;
+        li{
+            list-style-type: none;
+            display:inline-block;
+            a{
+                color:black;
+                font-size:2em;
+                text-decoration: none;
+                margin-right:80px;
+                padding:0.5em 10px;
+                @include transition_duration(0.2s);
+                &:hover{
+                    text-decoration: underline;
+                    color:$red;
+                }
+            }
+            &:nth-child(3) a{
+                margin-left:304px;
+            }
+        }
+        ul{
+            width:$body_width;
+            margin:auto;
+        }
+    }
+}
