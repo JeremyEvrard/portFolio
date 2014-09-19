@@ -1,2 +1,11 @@
-$body_width:1264px;
+$col:64px;
+$gutter:16px;
+$ncol:16;
+$body_width: ($ncol * $col) + (($ncol - 1) * $gutter);
+
+/*@for $i from 1 through $ncol{
+    $col-$i : $i * $col + ($i - 1) * $gutter;
+}*/
+$col_4:(4*$col) + (3*$gutter);
+$col_6:(6*$col) + (5*$gutter);
 $red:#aa0202;

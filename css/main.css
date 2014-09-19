@@ -439,6 +439,15 @@ th {
 ________________________________________________________________________________
 
 */
+/*@for $i from 1 through $ncol{
+    $col-$i : $i * $col + ($i - 1) * $gutter;
+}*/
+/* line 1, ../scss/_basic.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* line 1, ../scss/_header.scss */
 header {
   width: 100%;
@@ -453,7 +462,7 @@ header .riban {
 header .riban a {
   position: relative;
   display: block;
-  width: 340px;
+  width: 304px;
   margin: auto;
   z-index: 2;
 }
@@ -470,12 +479,11 @@ header nav li {
   list-style-type: none;
   display: inline-block;
 }
-/* line 25, ../scss/_header.scss */
+/* line 24, ../scss/_header.scss */
 header nav li a {
   color: black;
   font-size: 2em;
   text-decoration: none;
-  margin-right: 80px;
   padding: 0.5em 10px;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
@@ -484,28 +492,52 @@ header nav li a {
   position: relative;
   z-index: 3;
 }
-/* line 34, ../scss/_header.scss */
+/* line 33, ../scss/_header.scss */
 header nav li a:hover {
   text-decoration: underline;
   color: #aa0202;
 }
 /* line 39, ../scss/_header.scss */
 header nav li:nth-child(3) a {
-  margin-left: 304px;
+  margin-left: 384px;
 }
-/* line 43, ../scss/_header.scss */
+/* line 42, ../scss/_header.scss */
+header nav li:nth-last-child(n+2) a {
+  margin-right: 80px;
+}
+/* line 46, ../scss/_header.scss */
 header nav ul {
   width: 1264px;
   margin: auto;
 }
 
-/* line 49, ../scss/_header.scss */
+/* line 51, ../scss/_header.scss */
 .banniere {
   width: 100%;
   position: relative;
+  color: white;
+  background-color: #282828;
+}
+/* line 56, ../scss/_header.scss */
+.banniere ul {
+  width: 1264px;
+  margin: auto;
+}
+/* line 58, ../scss/_header.scss */
+.banniere ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 480px;
+  padding: 1em 0;
+  font-size: 2em;
+  text-align: center;
+}
+/* line 65, ../scss/_header.scss */
+.banniere ul li + li {
+  margin-left: 304px;
 }
 
-/* line 10, ../scss/main.scss */
+/* line 12, ../scss/main.scss */
 body {
   width: 100%;
   font-family: 'Open Sans', sans-serif;

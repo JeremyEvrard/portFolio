@@ -7,7 +7,7 @@ header{
         a{
             position:relative;
             display:block;
-            width:340px;
+            width:$col_4;
             margin:auto;
             z-index:2;
         }  
@@ -20,13 +20,12 @@ header{
         width:100%;
         background-color: white;
         li{
-            list-style-type: none;
-            display:inline-block;
+            @include list_horizontal;
             a{
                 color:black;
                 font-size:2em;
                 text-decoration: none;
-                margin-right:80px;
+                
                 padding:0.5em 10px;
                 @include transition_duration(0.2s);
                 position:relative;
@@ -36,17 +35,36 @@ header{
                     color:$red;
                 }
             }
+
             &:nth-child(3) a{
-                margin-left:304px;
+                margin-left:$col_4 + 80px;
+            }
+            &:nth-last-child(n+2) a{
+                margin-right:80px;
             }
         }
         ul{
-            width:$body_width;
-            margin:auto;
+            @include center_body;
         }
     }
 }
 .banniere{
     width:100%;
     position:relative;
+    color:white;
+    background-color:#282828;
+    ul{
+        @include center_body;
+        li{
+            @include list_horizontal;
+            width:$col_6 + $gutter;
+            padding:1em 0;
+            font-size: 2em;
+            text-align: center;
+        }
+        li+li{
+            margin-left:$col_4;
+        }
+    }
+    
 }
