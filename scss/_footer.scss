@@ -1,0 +1,20 @@
+footer{
+    width:100%;
+    background-color:$darkGrey;
+    color:white;
+}
+.contact{
+    @include center_body;
+    padding-top: 1em;
+    p{
+        width:$col_6;
+        margin: 0 $col_4 0 0;
+        font-size:1.5em;
+        float:left;
+    }
+    .coordonnee{
+        width:$col_6;
+        float:left;
+        @include clearFloat;
+    }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -444,9 +445,22 @@ ________________________________________________________________________________
     $col-$i : $i * $col + ($i - 1) * $gutter;
 }*/
 /* line 1, ../scss/_basic.scss */
+body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 5, ../scss/_basic.scss */
 ul {
   margin: 0;
   padding: 0;
+}
+
+/* line 9, ../scss/_basic.scss */
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin-left: 80px;
 }
 
 /* line 1, ../scss/_header.scss */
@@ -543,18 +557,18 @@ header nav ul {
   width: 1264px;
   margin: auto;
 }
-/* line 3, ../scss/_presentation.scss */
+/* line 10, ../scss/_mixin.scss */
 .presentation:after {
   content: '';
   display: block;
   clear: both;
 }
-/* line 8, ../scss/_presentation.scss */
+/* line 4, ../scss/_presentation.scss */
 .presentation > * {
   float: left;
 }
 
-/* line 12, ../scss/_presentation.scss */
+/* line 8, ../scss/_presentation.scss */
 .accroche {
   font-family: 'Merriweather', serif;
   font-weight: 300;
@@ -566,8 +580,197 @@ header nav ul {
   margin-top: 6em;
 }
 
-/* line 15, ../scss/main.scss */
-body {
+@-moz-keyframes Autoslide {
+  /* line 2, ../scss/_projetSection.scss */
+  0%, 15%, 100% {
+    left: 0px;
+    /*première image et dernière */
+  }
+
+  /* line 5, ../scss/_projetSection.scss */
+  20%, 35% {
+    left: -100%;
+    /*deuxième image */
+  }
+
+  /* line 8, ../scss/_projetSection.scss */
+  40%, 55% {
+    left: -200%;
+    /*troisième*/
+  }
+
+  /* line 11, ../scss/_projetSection.scss */
+  60%, 80% {
+    left: -300%;
+    /*quatrième*/
+  }
+}
+@-webkit-keyframes Autoslide {
+  /* line 2, ../scss/_projetSection.scss */
+  0%, 15%, 100% {
+    left: 0px;
+    /*première image et dernière */
+  }
+
+  /* line 5, ../scss/_projetSection.scss */
+  20%, 35% {
+    left: -100%;
+    /*deuxième image */
+  }
+
+  /* line 8, ../scss/_projetSection.scss */
+  40%, 55% {
+    left: -200%;
+    /*troisième*/
+  }
+
+  /* line 11, ../scss/_projetSection.scss */
+  60%, 80% {
+    left: -300%;
+    /*quatrième*/
+  }
+}
+@keyframes Autoslide {
+  /* line 2, ../scss/_projetSection.scss */
+  0%, 15%, 100% {
+    left: 0px;
+    /*première image et dernière */
+  }
+
+  /* line 5, ../scss/_projetSection.scss */
+  20%, 35% {
+    left: -100%;
+    /*deuxième image */
+  }
+
+  /* line 8, ../scss/_projetSection.scss */
+  40%, 55% {
+    left: -200%;
+    /*troisième*/
+  }
+
+  /* line 11, ../scss/_projetSection.scss */
+  60%, 80% {
+    left: -300%;
+    /*quatrième*/
+  }
+}
+/* line 15, ../scss/_projetSection.scss */
+.projets {
+  width: 1264px;
+  margin: auto;
+}
+/* line 17, ../scss/_projetSection.scss */
+.projets > a {
+  font-size: 1.5em;
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+  width: 304px;
+  color: black;
+}
+/* line 24, ../scss/_projetSection.scss */
+.projets > a:visited {
+  color: black;
+}
+/* line 27, ../scss/_projetSection.scss */
+.projets > a:hover {
+  color: #aa0202;
+}
+
+/* line 33, ../scss/_projetSection.scss */
+.projSlider {
+  width: 960px;
+  height: 720px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  -moz-box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
+  -webkit-box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
+  box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
+}
+/* line 40, ../scss/_projetSection.scss */
+.projSlider ul {
+  width: 400%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-animation-name: Autoslide;
+  -webkit-animation-name: Autoslide;
+  animation-name: Autoslide;
+  -moz-animation-duration: 60s;
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+/* line 50, ../scss/_projetSection.scss */
+.projSlider li {
+  width: 25%;
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 54, ../scss/_projetSection.scss */
+.projSlider img {
+  max-width: 100%;
+}
+
+/* line 1, ../scss/_lastSearch.scss */
+.lastDoc {
+  width: 1264px;
+  margin: auto;
+  margin-bottom: 2em;
+}
+/* line 4, ../scss/_lastSearch.scss */
+.lastDoc ul {
+  width: body_width;
+}
+/* line 6, ../scss/_lastSearch.scss */
+.lastDoc ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 8, ../scss/_lastSearch.scss */
+.lastDoc ul li img {
+  width: 304px;
+}
+/* line 12, ../scss/_lastSearch.scss */
+.lastDoc ul li + li {
+  margin-left: 16px;
+}
+
+/* line 1, ../scss/_footer.scss */
+footer {
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  background-color: #282828;
+  color: white;
+}
+
+/* line 6, ../scss/_footer.scss */
+.contact {
+  width: 1264px;
+  margin: auto;
+  padding-top: 1em;
+}
+/* line 9, ../scss/_footer.scss */
+.contact p {
+  width: 464px;
+  margin: 0 304px 0 0;
+  font-size: 1.5em;
+  float: left;
+}
+/* line 15, ../scss/_footer.scss */
+.contact .coordonnee {
+  width: 464px;
+  float: left;
+}
+/* line 10, ../scss/_mixin.scss */
+.contact .coordonnee:after {
+  content: '';
+  display: block;
+  clear: both;
 }

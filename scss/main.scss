@@ -11,8 +11,6 @@ ________________________________________________________________________________
 @import "basic";
 @import "header";
 @import "presentation";
-
-body{
-    width:100%;
-    font-family: 'Open Sans', sans-serif;
-}
+@import "projetSection";
+@import "lastSearch";
+@import "footer";

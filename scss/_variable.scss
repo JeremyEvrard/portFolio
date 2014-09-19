@@ -8,4 +8,6 @@ $body_width: ($ncol * $col) + (($ncol - 1) * $gutter);
 }*/
 $col_4:(4*$col) + (3*$gutter);
 $col_6:(6*$col) + (5*$gutter);
+$col_12:(12*$col) + (11*$gutter);
 $red:#aa0202;
+$darkGrey:#282828;

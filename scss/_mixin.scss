@@ -6,3 +6,10 @@
     width:$body_width;
     margin:auto;
 }
+@mixin clearFloat(){
+    &:after{
+        content:'';
+        display:block;
+        clear:both;
+    }
+}

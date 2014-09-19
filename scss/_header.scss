@@ -52,7 +52,7 @@ header{
     width:100%;
     position:relative;
     color:white;
-    background-color:#282828;
+    background-color:$darkGrey;
     ul{
         @include center_body;
         li{
