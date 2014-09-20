@@ -463,6 +463,16 @@ h1 {
   margin-left: 80px;
 }
 
+/* line 14, ../scss/_basic.scss */
+figure {
+  margin: 0;
+}
+
+/* line 17, ../scss/_basic.scss */
+.blind {
+  text-indent: -9999px;
+}
+
 /* line 1, ../scss/_header.scss */
 header {
   width: 100%;
@@ -793,4 +803,116 @@ footer h1 {
 /* line 42, ../scss/_footer.scss */
 .contact ul li + li {
   margin-left: 16px;
+}
+
+/* line 1, ../scss/_listProjet.scss */
+.Projets {
+  padding-top: 2em;
+  width: 1264px;
+  margin: auto;
+}
+/* line 4, ../scss/_listProjet.scss */
+.Projets h2 {
+  margin-left: 80px;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: 'merryweather', serif;
+  font-style: italic;
+}
+/* line 11, ../scss/_listProjet.scss */
+.Projets h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+/* line 10, ../scss/_mixin.scss */
+.Projets > section:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 18, ../scss/_listProjet.scss */
+.Projets > section section {
+  background-color: rgba(1, 1, 1, 0.1);
+  padding: 0 16px 16px;
+  float: left;
+  width: 624px;
+  margin-bottom: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 26, ../scss/_listProjet.scss */
+.Projets > section section:hover {
+  -moz-box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
+  -webkit-box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
+  box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
+}
+/* line 30, ../scss/_listProjet.scss */
+.Projets > section section:nth-child(even) {
+  margin-right: 16px;
+}
+/* line 33, ../scss/_listProjet.scss */
+.Projets > section figure {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 20em;
+}
+/* line 38, ../scss/_listProjet.scss */
+.Projets > section p {
+  min-height: 6em;
+}
+/* line 41, ../scss/_listProjet.scss */
+.Projets > section img {
+  max-width: 100%;
+  max-height: 20em;
+  display: block;
+  margin: auto;
+}
+/* line 49, ../scss/_listProjet.scss */
+.Projets li {
+  list-style-type: none;
+  display: inline-block;
+  width: 50%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+/* line 54, ../scss/_listProjet.scss */
+.Projets li a {
+  width: 100%;
+  display: block;
+  background-color: rgba(170, 2, 2, 0.5);
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  color: white;
+  text-decoration: none;
+  padding: 1em 0;
+  text-align: center;
+}
+/* line 63, ../scss/_listProjet.scss */
+.Projets li a:hover {
+  background-color: #aa0202;
+}
+/* line 68, ../scss/_listProjet.scss */
+.Projets li + li {
+  padding-left: 8px;
+}
+/* line 71, ../scss/_listProjet.scss */
+.Projets li:first-child {
+  padding-right: 8px;
+}
+/* line 74, ../scss/_listProjet.scss */
+.Projets .single li {
+  width: 100%;
+  padding: 0px;
 }

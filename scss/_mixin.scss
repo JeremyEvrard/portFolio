@@ -13,3 +13,6 @@
         clear:both;
     }
 }
+@mixin blindText{
+    text-indent: -9999px;
+}
