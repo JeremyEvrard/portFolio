@@ -580,12 +580,38 @@ header nav ul {
 }
 
 /* line 8, ../scss/_presentation.scss */
+.aboutMe {
+  width: 1264px;
+  margin: auto;
+}
+/* line 10, ../scss/_mixin.scss */
+.aboutMe:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 11, ../scss/_presentation.scss */
+.aboutMe > * {
+  float: right;
+}
+
+/* line 15, ../scss/_presentation.scss */
+.accrocheAboutMe {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: italic;
+  width: 464px;
+  margin-right: 80px;
+  font-size: 2em;
+  margin-top: 6em;
+}
+
+/* line 25, ../scss/_presentation.scss */
 .accroche {
   font-family: 'Merriweather', serif;
   font-weight: 300;
   font-style: italic;
   width: 464px;
-  float: left;
   margin-left: 80px;
   font-size: 2em;
   margin-top: 6em;
@@ -812,14 +838,18 @@ footer h1 {
   margin: auto;
 }
 /* line 4, ../scss/_listProjet.scss */
+.Projets h1 {
+  font-size: 3em;
+}
+/* line 7, ../scss/_listProjet.scss */
 .Projets h2 {
   margin-left: 80px;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: 'merryweather', serif;
   font-style: italic;
 }
-/* line 11, ../scss/_listProjet.scss */
+/* line 14, ../scss/_listProjet.scss */
 .Projets h3 {
   font-size: 1.5em;
   font-weight: 400;
@@ -831,7 +861,7 @@ footer h1 {
   display: block;
   clear: both;
 }
-/* line 18, ../scss/_listProjet.scss */
+/* line 21, ../scss/_listProjet.scss */
 .Projets > section section {
   background-color: rgba(1, 1, 1, 0.1);
   padding: 0 16px 16px;
@@ -846,17 +876,17 @@ footer h1 {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 26, ../scss/_listProjet.scss */
+/* line 29, ../scss/_listProjet.scss */
 .Projets > section section:hover {
   -moz-box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
   -webkit-box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
   box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
 }
-/* line 30, ../scss/_listProjet.scss */
+/* line 33, ../scss/_listProjet.scss */
 .Projets > section section:nth-child(even) {
   margin-right: 16px;
 }
-/* line 33, ../scss/_listProjet.scss */
+/* line 36, ../scss/_listProjet.scss */
 .Projets > section figure {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -864,18 +894,18 @@ footer h1 {
   width: 100%;
   min-height: 20em;
 }
-/* line 38, ../scss/_listProjet.scss */
+/* line 41, ../scss/_listProjet.scss */
 .Projets > section p {
   min-height: 6em;
 }
-/* line 41, ../scss/_listProjet.scss */
+/* line 44, ../scss/_listProjet.scss */
 .Projets > section img {
   max-width: 100%;
   max-height: 20em;
   display: block;
   margin: auto;
 }
-/* line 49, ../scss/_listProjet.scss */
+/* line 52, ../scss/_listProjet.scss */
 .Projets li {
   list-style-type: none;
   display: inline-block;
@@ -885,7 +915,7 @@ footer h1 {
   box-sizing: border-box;
   float: left;
 }
-/* line 54, ../scss/_listProjet.scss */
+/* line 57, ../scss/_listProjet.scss */
 .Projets li a {
   width: 100%;
   display: block;
@@ -899,19 +929,19 @@ footer h1 {
   padding: 1em 0;
   text-align: center;
 }
-/* line 63, ../scss/_listProjet.scss */
+/* line 66, ../scss/_listProjet.scss */
 .Projets li a:hover {
   background-color: #aa0202;
 }
-/* line 68, ../scss/_listProjet.scss */
+/* line 71, ../scss/_listProjet.scss */
 .Projets li + li {
   padding-left: 8px;
 }
-/* line 71, ../scss/_listProjet.scss */
+/* line 74, ../scss/_listProjet.scss */
 .Projets li:first-child {
   padding-right: 8px;
 }
-/* line 74, ../scss/_listProjet.scss */
+/* line 77, ../scss/_listProjet.scss */
 .Projets .single li {
   width: 100%;
   padding: 0px;
