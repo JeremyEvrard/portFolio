@@ -1,15 +1,12 @@
 @include keyframes(Autoslide){
-    0%, 15%, 100% {
+    0%, 25%, 100% {
         left:0px; /*première image et dernière */
     }
-    20%, 35% {
+    30%, 55% {
         left: -100%; /*deuxième image */
     }
-    40%, 55% {
+    60%, 85% {
         left:-200%;/*troisième*/
-    }
-    60%, 80% {
-        left:-300%;/*quatrième*/
     }
 }
 .projets{
@@ -43,7 +40,7 @@
         top:0;
         left:0;
         @include animation-name(Autoslide);
-        @include animation-duration(60s);
+        @include animation-duration(30s);
         @include animation-iteration-count(infinite);
         @include animation-timing-function(ease-in-out);
     }

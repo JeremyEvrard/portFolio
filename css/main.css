@@ -485,9 +485,9 @@ header .riban a {
 header nav {
   position: relative;
   top: 0;
-  padding: 1.5em 0;
   width: 100%;
   background-color: white;
+  height: 6em;
 }
 /* line 22, ../scss/_header.scss */
 header nav li {
@@ -499,7 +499,8 @@ header nav li a {
   color: black;
   font-size: 2em;
   text-decoration: none;
-  padding: 0.5em 10px;
+  display: inline-block;
+  padding: 0.75em 10px;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
@@ -507,38 +508,38 @@ header nav li a {
   position: relative;
   z-index: 3;
 }
-/* line 33, ../scss/_header.scss */
+/* line 34, ../scss/_header.scss */
 header nav li a:hover {
-  text-decoration: underline;
+  border-bottom: 0.16em solid #aa0202;
   color: #aa0202;
 }
-/* line 39, ../scss/_header.scss */
+/* line 41, ../scss/_header.scss */
 header nav li:nth-child(3) a {
   margin-left: 384px;
 }
-/* line 42, ../scss/_header.scss */
+/* line 44, ../scss/_header.scss */
 header nav li:nth-last-child(n+2) a {
   margin-right: 80px;
 }
-/* line 46, ../scss/_header.scss */
+/* line 48, ../scss/_header.scss */
 header nav ul {
   width: 1264px;
   margin: auto;
 }
 
-/* line 51, ../scss/_header.scss */
+/* line 53, ../scss/_header.scss */
 .banniere {
   width: 100%;
   position: relative;
   color: white;
   background-color: #282828;
 }
-/* line 56, ../scss/_header.scss */
+/* line 58, ../scss/_header.scss */
 .banniere ul {
   width: 1264px;
   margin: auto;
 }
-/* line 58, ../scss/_header.scss */
+/* line 60, ../scss/_header.scss */
 .banniere ul li {
   list-style-type: none;
   display: inline-block;
@@ -547,7 +548,7 @@ header nav ul {
   font-size: 2em;
   text-align: center;
 }
-/* line 65, ../scss/_header.scss */
+/* line 67, ../scss/_header.scss */
 .banniere ul li + li {
   margin-left: 304px;
 }
@@ -582,85 +583,67 @@ header nav ul {
 
 @-moz-keyframes Autoslide {
   /* line 2, ../scss/_projetSection.scss */
-  0%, 15%, 100% {
+  0%, 25%, 100% {
     left: 0px;
     /*première image et dernière */
   }
 
   /* line 5, ../scss/_projetSection.scss */
-  20%, 35% {
+  30%, 55% {
     left: -100%;
     /*deuxième image */
   }
 
   /* line 8, ../scss/_projetSection.scss */
-  40%, 55% {
+  60%, 85% {
     left: -200%;
     /*troisième*/
-  }
-
-  /* line 11, ../scss/_projetSection.scss */
-  60%, 80% {
-    left: -300%;
-    /*quatrième*/
   }
 }
 @-webkit-keyframes Autoslide {
   /* line 2, ../scss/_projetSection.scss */
-  0%, 15%, 100% {
+  0%, 25%, 100% {
     left: 0px;
     /*première image et dernière */
   }
 
   /* line 5, ../scss/_projetSection.scss */
-  20%, 35% {
+  30%, 55% {
     left: -100%;
     /*deuxième image */
   }
 
   /* line 8, ../scss/_projetSection.scss */
-  40%, 55% {
+  60%, 85% {
     left: -200%;
     /*troisième*/
-  }
-
-  /* line 11, ../scss/_projetSection.scss */
-  60%, 80% {
-    left: -300%;
-    /*quatrième*/
   }
 }
 @keyframes Autoslide {
   /* line 2, ../scss/_projetSection.scss */
-  0%, 15%, 100% {
+  0%, 25%, 100% {
     left: 0px;
     /*première image et dernière */
   }
 
   /* line 5, ../scss/_projetSection.scss */
-  20%, 35% {
+  30%, 55% {
     left: -100%;
     /*deuxième image */
   }
 
   /* line 8, ../scss/_projetSection.scss */
-  40%, 55% {
+  60%, 85% {
     left: -200%;
     /*troisième*/
   }
-
-  /* line 11, ../scss/_projetSection.scss */
-  60%, 80% {
-    left: -300%;
-    /*quatrième*/
-  }
 }
-/* line 15, ../scss/_projetSection.scss */
+/* line 12, ../scss/_projetSection.scss */
 .projets {
   width: 1264px;
   margin: auto;
 }
-/* line 17, ../scss/_projetSection.scss */
+/* line 14, ../scss/_projetSection.scss */
 .projets > a {
   font-size: 1.5em;
   display: block;
@@ -669,16 +652,16 @@ header nav ul {
   width: 304px;
   color: black;
 }
-/* line 24, ../scss/_projetSection.scss */
+/* line 21, ../scss/_projetSection.scss */
 .projets > a:visited {
   color: black;
 }
-/* line 27, ../scss/_projetSection.scss */
+/* line 24, ../scss/_projetSection.scss */
 .projets > a:hover {
   color: #aa0202;
 }
 
-/* line 33, ../scss/_projetSection.scss */
+/* line 30, ../scss/_projetSection.scss */
 .projSlider {
   width: 960px;
   height: 720px;
@@ -689,7 +672,7 @@ header nav ul {
   -webkit-box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
   box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
 }
-/* line 40, ../scss/_projetSection.scss */
+/* line 37, ../scss/_projetSection.scss */
 .projSlider ul {
   width: 400%;
   position: absolute;
@@ -698,9 +681,9 @@ header nav ul {
   -moz-animation-name: Autoslide;
   -webkit-animation-name: Autoslide;
   animation-name: Autoslide;
-  -moz-animation-duration: 60s;
-  -webkit-animation-duration: 60s;
-  animation-duration: 60s;
+  -moz-animation-duration: 30s;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -708,13 +691,13 @@ header nav ul {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
-/* line 50, ../scss/_projetSection.scss */
+/* line 47, ../scss/_projetSection.scss */
 .projSlider li {
   width: 25%;
   list-style-type: none;
   display: inline-block;
 }
-/* line 54, ../scss/_projetSection.scss */
+/* line 51, ../scss/_projetSection.scss */
 .projSlider img {
   max-width: 100%;
 }
@@ -749,21 +732,25 @@ footer {
   background-color: #282828;
   color: white;
 }
+/* line 5, ../scss/_footer.scss */
+footer h1 {
+  margin-left: 0;
+}
 
-/* line 6, ../scss/_footer.scss */
+/* line 9, ../scss/_footer.scss */
 .contact {
   width: 1264px;
   margin: auto;
   padding-top: 1em;
 }
-/* line 9, ../scss/_footer.scss */
+/* line 12, ../scss/_footer.scss */
 .contact p {
   width: 464px;
   margin: 0 304px 0 0;
   font-size: 1.5em;
   float: left;
 }
-/* line 15, ../scss/_footer.scss */
+/* line 18, ../scss/_footer.scss */
 .contact .coordonnee {
   width: 464px;
   float: left;
@@ -773,4 +760,37 @@ footer {
   content: '';
   display: block;
   clear: both;
+}
+/* line 23, ../scss/_footer.scss */
+.contact ul {
+  clear: both;
+  width: 624px;
+  margin: auto;
+  padding: 2em 0;
+}
+/* line 28, ../scss/_footer.scss */
+.contact ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 30, ../scss/_footer.scss */
+.contact ul li img {
+  width: 144px;
+  border-radius: 72px;
+  opacity: 0.6;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 35, ../scss/_footer.scss */
+.contact ul li img:hover {
+  opacity: 1;
+  -moz-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+}
+/* line 42, ../scss/_footer.scss */
+.contact ul li + li {
+  margin-left: 16px;
 }
