@@ -1,0 +1,71 @@
+header{
+    width:100%;
+    .riban{
+        position:absolute;
+        text-align: center;
+        width:100%;
+        a{
+            position:relative;
+            display:block;
+            width:$col_4;
+            margin:auto;
+            z-index:2;
+        }  
+        
+    }
+    nav{
+        position:relative;
+        top:0;
+        width:100%;
+        background-color: white;
+        height:6em;
+        li{
+            @include list_horizontal;
+            a{
+                color:black;
+                font-size:2em;
+                text-decoration: none;
+                //@include box-sizing;
+                display:inline-block;
+                padding:0.75em 10px;
+                @include transition_duration(0.2s);
+                position:relative;
+                z-index:3;
+                &:hover{
+                    //text-decoration: underline;
+                    border-bottom: 0.16em solid $red;
+                    color:$red;
+                }
+            }
+
+            &:nth-child(3) a{
+                margin-left:$col_4 + 80px;
+            }
+            &:nth-last-child(n+2) a{
+                margin-right:80px;
+            }
+        }
+        ul{
+            @include center_body;
+        }
+    }
+}
+.banniere{
+    width:100%;
+    position:relative;
+    color:white;
+    background-color:$darkGrey;
+    ul{
+        @include center_body;
+        li{
+            @include list_horizontal;
+            width:$col_6 + $gutter;
+            padding:1.5em 0;
+            font-size: 2em;
+            text-align: center;
+        }
+        li+li{
+            margin-left:$col_4;
+        }
+    }
+}

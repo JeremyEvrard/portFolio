@@ -1,0 +1,15 @@
+@mixin list_horizontal(){
+    list-style-type: none;
+    display:inline-block;
+}
+@mixin center_body(){
+    width:$body_width;
+    margin:auto;
+}
+@mixin clearFloat(){
+    &:after{
+        content:'';
+        display:block;
+        clear:both;
+    }
+}
