@@ -16,22 +16,24 @@ header{
     nav{
         position:relative;
         top:0;
-        padding: 1.5em 0;
         width:100%;
         background-color: white;
+        height:6em;
         li{
             @include list_horizontal;
             a{
                 color:black;
                 font-size:2em;
                 text-decoration: none;
-                
-                padding:0.5em 10px;
+                //@include box-sizing;
+                display:inline-block;
+                padding:0.75em 10px;
                 @include transition_duration(0.2s);
                 position:relative;
                 z-index:3;
                 &:hover{
-                    text-decoration: underline;
+                    //text-decoration: underline;
+                    border-bottom: 0.16em solid $red;
                     color:$red;
                 }
             }
