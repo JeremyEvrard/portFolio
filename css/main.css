@@ -1055,7 +1055,7 @@ footer h1 {
 
 /* line 1, ../scss/_aboutMe.scss */
 .about {
-  margin: 12em auto 2em;
+  margin: 2em auto;
   width: 864px;
 }
 /* line 10, ../scss/_mixin.scss */
@@ -1064,21 +1064,21 @@ footer h1 {
   display: block;
   clear: both;
 }
-/* line 5, ../scss/_aboutMe.scss */
+/* line 6, ../scss/_aboutMe.scss */
 .about h1 {
   font-family: 'merryweather', serif;
   font-size: 2em;
   padding: 0 0.5em;
   border-right: 2px solid #282828;
 }
-/* line 13, ../scss/_aboutMe.scss */
+/* line 14, ../scss/_aboutMe.scss */
 .about div {
   width: 384px;
   margin-right: 16px;
   float: left;
   text-align: right;
 }
-/* line 20, ../scss/_aboutMe.scss */
+/* line 21, ../scss/_aboutMe.scss */
 .about article {
   width: 464px;
   float: right;
