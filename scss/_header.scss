@@ -11,9 +11,8 @@ header{
             margin:auto;
             z-index:2;
         }  
-        
     }
-    nav{
+    .riban+nav{
         position:relative;
         top:0;
         width:100%;
@@ -49,6 +48,15 @@ header{
             @include center_body;
         }
     }
+    .ribanMenu{
+        @include center_body;
+        img{
+            width:11.35646687697161%;
+            &:hover{
+                background-image: url(../images/ribanInv_hover.png);
+            }
+        }
+    }  
 }
 .banniere{
     width:100%;

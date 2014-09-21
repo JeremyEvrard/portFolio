@@ -1,0 +1,25 @@
+.about{
+    margin:12em auto 2em;
+    width:$col_11;
+    @include clearFloat;
+    h1{
+        font-family: 'merryweather', serif;
+        font-size: 2em;
+        //color:white;
+        padding:0 0.5em;
+        border-right:2px solid $darkGrey;
+        //background-color: $darkGrey;
+    }
+    div{
+        width:$col_5;
+        //margin-left:$col_6;
+        margin-right:$gutter;
+        float:left;
+        text-align: right;
+    }
+    article{
+        width:$col_6;
+        float:right;
+        font-size: 1em;
+    }
+}

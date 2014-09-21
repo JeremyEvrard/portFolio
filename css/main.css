@@ -491,21 +491,21 @@ header .riban a {
   margin: auto;
   z-index: 2;
 }
-/* line 16, ../scss/_header.scss */
-header nav {
+/* line 15, ../scss/_header.scss */
+header .riban + nav {
   position: relative;
   top: 0;
   width: 100%;
   background-color: white;
   height: 6em;
 }
-/* line 22, ../scss/_header.scss */
-header nav li {
+/* line 21, ../scss/_header.scss */
+header .riban + nav li {
   list-style-type: none;
   display: inline-block;
 }
-/* line 24, ../scss/_header.scss */
-header nav li a {
+/* line 23, ../scss/_header.scss */
+header .riban + nav li a {
   color: black;
   font-size: 2em;
   text-decoration: none;
@@ -518,38 +518,51 @@ header nav li a {
   position: relative;
   z-index: 3;
 }
-/* line 34, ../scss/_header.scss */
-header nav li a:hover {
+/* line 33, ../scss/_header.scss */
+header .riban + nav li a:hover {
   border-bottom: 0.16em solid #aa0202;
   color: #aa0202;
 }
-/* line 41, ../scss/_header.scss */
-header nav li:nth-child(3) a {
+/* line 40, ../scss/_header.scss */
+header .riban + nav li:nth-child(3) a {
   margin-left: 384px;
 }
-/* line 44, ../scss/_header.scss */
-header nav li:nth-last-child(n+2) a {
+/* line 43, ../scss/_header.scss */
+header .riban + nav li:nth-last-child(n+2) a {
   margin-right: 80px;
 }
-/* line 48, ../scss/_header.scss */
-header nav ul {
+/* line 47, ../scss/_header.scss */
+header .riban + nav ul {
   width: 1264px;
   margin: auto;
 }
-
+/* line 51, ../scss/_header.scss */
+header .ribanMenu {
+  width: 1264px;
+  margin: auto;
+}
 /* line 53, ../scss/_header.scss */
+header .ribanMenu img {
+  width: 11.35646687697161%;
+}
+/* line 55, ../scss/_header.scss */
+header .ribanMenu img:hover {
+  background-image: url(../images/ribanInv_hover.png);
+}
+
+/* line 61, ../scss/_header.scss */
 .banniere {
   width: 100%;
   position: relative;
   color: white;
   background-color: #282828;
 }
-/* line 58, ../scss/_header.scss */
+/* line 66, ../scss/_header.scss */
 .banniere ul {
   width: 1264px;
   margin: auto;
 }
-/* line 60, ../scss/_header.scss */
+/* line 68, ../scss/_header.scss */
 .banniere ul li {
   list-style-type: none;
   display: inline-block;
@@ -558,7 +571,7 @@ header nav ul {
   font-size: 2em;
   text-align: center;
 }
-/* line 67, ../scss/_header.scss */
+/* line 75, ../scss/_header.scss */
 .banniere ul li + li {
   margin-left: 304px;
 }
@@ -945,4 +958,36 @@ footer h1 {
 .Projets .single li {
   width: 100%;
   padding: 0px;
+}
+
+/* line 1, ../scss/_aboutMe.scss */
+.about {
+  margin: 12em auto 2em;
+  width: 864px;
+}
+/* line 10, ../scss/_mixin.scss */
+.about:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 5, ../scss/_aboutMe.scss */
+.about h1 {
+  font-family: 'merryweather', serif;
+  font-size: 2em;
+  padding: 0 0.5em;
+  border-right: 2px solid #282828;
+}
+/* line 13, ../scss/_aboutMe.scss */
+.about div {
+  width: 384px;
+  margin-right: 16px;
+  float: left;
+  text-align: right;
+}
+/* line 20, ../scss/_aboutMe.scss */
+.about article {
+  width: 464px;
+  float: right;
+  font-size: 1em;
 }
