@@ -1,5 +1,57 @@
-header{
+.simple{
     width:100%;
+    background-color:$darkGrey;
+    nav{
+        @include center_body;
+        color:white;
+        height:6em;
+        ul{
+            float:right;
+        }
+        li{
+            @include list_horizontal;
+            a{
+                font-size:1.5em;
+                color:white;
+                text-decoration: none;
+                //@include box-sizing;
+                display:inline-block;
+                padding:1.25em 10px;
+                @include transition_duration(0.2s);
+                position:relative;
+                z-index:3;
+                &:hover{
+                    //text-decoration: underline;
+                    border-bottom: 0.16em solid white;
+                }
+            }
+        }
+    }
+    .logo{
+        width:$col_6;
+        float:left;
+        a{
+            color:white;
+            text-decoration: none;
+            font-size: 1.5em;
+            &:hover span{
+                text-decoration: underline;
+            }
+        }
+        span{
+            padding:1.25em 16px;
+            display:block;
+            float:left;
+        }
+        img{
+            display:block;
+            float:left;
+            height:3em;
+            margin-top:0.66em;
+        }
+    }
+}
+.home{
     .riban{
         position:absolute;
         text-align: center;

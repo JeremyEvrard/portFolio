@@ -7,6 +7,7 @@ $body_width: ($ncol * $col) + (($ncol - 1) * $gutter);
     $col-$i : $i * $col + ($i - 1) * $gutter;
 }*/
 $col_2:(2*$col) + (1*$gutter);
+$col_3:(3*$col) + (2*$gutter);
 $col_4:(4*$col) + (3*$gutter);
 $col_5:(5*$col) + (4*$gutter);
 $col_6:(6*$col) + (5*$gutter);
