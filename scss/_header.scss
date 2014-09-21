@@ -48,15 +48,45 @@ header{
             @include center_body;
         }
     }
-    .ribanMenu{
+    /*.uncentred{
         @include center_body;
+        position:relative;
         img{
-            width:11.35646687697161%;
-            &:hover{
-                background-image: url(../images/ribanInv_hover.png);
-            }
+            position:absolute;
+            width:11.35646687697161%;   
         }
-    }  
+        &+nav{
+            @include center_body;
+            position:relative;
+            top:0;
+            //background-color: white;
+            height:6em;
+            z-index:0;
+            ul{
+            padding-left:11.35646687697161%;
+            }
+            li{
+                @include list_horizontal;
+                margin-left:$gutter;
+                a{
+                    color:black;
+                    font-size:2em;
+                    text-decoration: none;
+                    //@include box-sizing;
+                    display:inline-block;
+                    padding:0.75em 10px;
+                    @include transition_duration(0.2s);
+                    position:relative;
+                    z-index:3;
+                    &:hover{
+                        //text-decoration: underline;
+                        border-bottom: 0.16em solid $red;
+                        color:$red;
+                    }   
+                }
+            }
+        }  
+    }  */    
 }
 .banniere{
     width:100%;

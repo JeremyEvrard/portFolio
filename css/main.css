@@ -476,6 +476,45 @@ figure {
 /* line 1, ../scss/_header.scss */
 header {
   width: 100%;
+  /*.uncentred{
+      @include center_body;
+      position:relative;
+      img{
+          position:absolute;
+          width:11.35646687697161%;   
+      }
+      &+nav{
+          @include center_body;
+          position:relative;
+          top:0;
+          //background-color: white;
+          height:6em;
+          z-index:0;
+          ul{
+          padding-left:11.35646687697161%;
+          }
+          li{
+              @include list_horizontal;
+              margin-left:$gutter;
+              a{
+                  color:black;
+                  font-size:2em;
+                  text-decoration: none;
+                  //@include box-sizing;
+                  display:inline-block;
+                  padding:0.75em 10px;
+                  @include transition_duration(0.2s);
+                  position:relative;
+                  z-index:3;
+                  &:hover{
+                      //text-decoration: underline;
+                      border-bottom: 0.16em solid $red;
+                      color:$red;
+                  }   
+              }
+          }
+      }  
+  }  */
 }
 /* line 3, ../scss/_header.scss */
 header .riban {
@@ -536,33 +575,20 @@ header .riban + nav ul {
   width: 1264px;
   margin: auto;
 }
-/* line 51, ../scss/_header.scss */
-header .ribanMenu {
-  width: 1264px;
-  margin: auto;
-}
-/* line 53, ../scss/_header.scss */
-header .ribanMenu img {
-  width: 11.35646687697161%;
-}
-/* line 55, ../scss/_header.scss */
-header .ribanMenu img:hover {
-  background-image: url(../images/ribanInv_hover.png);
-}
 
-/* line 61, ../scss/_header.scss */
+/* line 91, ../scss/_header.scss */
 .banniere {
   width: 100%;
   position: relative;
   color: white;
   background-color: #282828;
 }
-/* line 66, ../scss/_header.scss */
+/* line 96, ../scss/_header.scss */
 .banniere ul {
   width: 1264px;
   margin: auto;
 }
-/* line 68, ../scss/_header.scss */
+/* line 98, ../scss/_header.scss */
 .banniere ul li {
   list-style-type: none;
   display: inline-block;
@@ -571,7 +597,7 @@ header .ribanMenu img:hover {
   font-size: 2em;
   text-align: center;
 }
-/* line 75, ../scss/_header.scss */
+/* line 105, ../scss/_header.scss */
 .banniere ul li + li {
   margin-left: 304px;
 }
