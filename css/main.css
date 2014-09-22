@@ -588,16 +588,30 @@ figure {
   position: absolute;
   text-align: center;
   width: 100%;
+  height: 0;
 }
-/* line 59, ../scss/_header.scss */
+/* line 60, ../scss/_header.scss */
 .home .riban a {
   position: relative;
   display: block;
   width: 304px;
   margin: auto;
   z-index: 2;
+  top: -8em;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 67, ../scss/_header.scss */
+/* line 68, ../scss/_header.scss */
+.home .riban a:hover {
+  top: 0;
+}
+/* line 72, ../scss/_header.scss */
+.home .riban img {
+  width: 100%;
+}
+/* line 76, ../scss/_header.scss */
 .home .riban + nav {
   position: relative;
   top: 0;
@@ -605,12 +619,12 @@ figure {
   background-color: white;
   height: 6em;
 }
-/* line 73, ../scss/_header.scss */
+/* line 82, ../scss/_header.scss */
 .home .riban + nav li {
   list-style-type: none;
   display: inline-block;
 }
-/* line 75, ../scss/_header.scss */
+/* line 84, ../scss/_header.scss */
 .home .riban + nav li a {
   color: black;
   font-size: 2em;
@@ -624,38 +638,38 @@ figure {
   position: relative;
   z-index: 3;
 }
-/* line 85, ../scss/_header.scss */
+/* line 94, ../scss/_header.scss */
 .home .riban + nav li a:hover {
   border-bottom: 0.16em solid #aa0202;
   color: #aa0202;
 }
-/* line 92, ../scss/_header.scss */
+/* line 101, ../scss/_header.scss */
 .home .riban + nav li:nth-child(3) a {
   margin-left: 384px;
 }
-/* line 95, ../scss/_header.scss */
+/* line 104, ../scss/_header.scss */
 .home .riban + nav li:nth-last-child(n+2) a {
   margin-right: 80px;
 }
-/* line 99, ../scss/_header.scss */
+/* line 108, ../scss/_header.scss */
 .home .riban + nav ul {
   width: 1264px;
   margin: auto;
 }
 
-/* line 143, ../scss/_header.scss */
+/* line 152, ../scss/_header.scss */
 .banniere {
   width: 100%;
   position: relative;
   color: white;
   background-color: #282828;
 }
-/* line 148, ../scss/_header.scss */
+/* line 157, ../scss/_header.scss */
 .banniere ul {
   width: 1264px;
   margin: auto;
 }
-/* line 150, ../scss/_header.scss */
+/* line 159, ../scss/_header.scss */
 .banniere ul li {
   list-style-type: none;
   display: inline-block;
@@ -664,7 +678,7 @@ figure {
   font-size: 2em;
   text-align: center;
 }
-/* line 157, ../scss/_header.scss */
+/* line 166, ../scss/_header.scss */
 .banniere ul li + li {
   margin-left: 304px;
 }
@@ -686,18 +700,18 @@ figure {
 }
 
 /* line 8, ../scss/_presentation.scss */
-.aboutMe {
+.aboutMe, .contactPage {
   width: 1264px;
   margin: auto;
 }
 /* line 10, ../scss/_mixin.scss */
-.aboutMe:after {
+.aboutMe:after, .contactPage:after {
   content: '';
   display: block;
   clear: both;
 }
 /* line 11, ../scss/_presentation.scss */
-.aboutMe > * {
+.aboutMe > *, .contactPage > * {
   float: right;
 }
 
@@ -707,19 +721,19 @@ figure {
   font-weight: 300;
   font-style: italic;
   width: 464px;
-  margin-right: 80px;
   font-size: 2em;
+  margin-right: 80px;
   margin-top: 6em;
 }
 
-/* line 25, ../scss/_presentation.scss */
+/* line 20, ../scss/_presentation.scss */
 .accroche {
   font-family: 'Merriweather', serif;
   font-weight: 300;
   font-style: italic;
   width: 464px;
-  margin-left: 80px;
   font-size: 2em;
+  margin-left: 80px;
   margin-top: 6em;
 }
 
@@ -788,25 +802,28 @@ figure {
 /* line 14, ../scss/_projetSection.scss */
 .projets > a {
   font-size: 1.5em;
+  width: 944px;
   display: block;
-  margin: 1em auto;
+  background-color: rgba(170, 2, 2, 0.5);
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  color: white;
+  padding: 1em 0;
   text-align: center;
-  width: 304px;
-  color: black;
+  text-decoration: none;
+  margin: 1em auto;
 }
-/* line 21, ../scss/_projetSection.scss */
-.projets > a:visited {
-  color: black;
-}
-/* line 24, ../scss/_projetSection.scss */
+/* line 35, ../scss/_mixin.scss */
 .projets > a:hover {
-  color: #aa0202;
+  background-color: #aa0202;
 }
 
-/* line 30, ../scss/_projetSection.scss */
+/* line 21, ../scss/_projetSection.scss */
 .projSlider {
-  width: 960px;
-  height: 720px;
+  width: 944px;
+  height: 708px;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -814,9 +831,9 @@ figure {
   -webkit-box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
   box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
 }
-/* line 37, ../scss/_projetSection.scss */
+/* line 28, ../scss/_projetSection.scss */
 .projSlider ul {
-  width: 400%;
+  width: 300%;
   position: absolute;
   top: 0;
   left: 0;
@@ -833,13 +850,13 @@ figure {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
-/* line 47, ../scss/_projetSection.scss */
+/* line 38, ../scss/_projetSection.scss */
 .projSlider li {
-  width: 25%;
+  width: 33.333333333%;
   list-style-type: none;
   display: inline-block;
 }
-/* line 51, ../scss/_projetSection.scss */
+/* line 42, ../scss/_projetSection.scss */
 .projSlider img {
   max-width: 100%;
 }
@@ -878,21 +895,27 @@ footer {
 footer h1 {
   margin-left: 0;
 }
+/* line 8, ../scss/_footer.scss */
+footer h2 {
+  clear: both;
+  font-weight: 300;
+  padding-top: 1.5em;
+}
 
-/* line 9, ../scss/_footer.scss */
+/* line 14, ../scss/_footer.scss */
 .contact {
   width: 1264px;
   margin: auto;
   padding-top: 1em;
 }
-/* line 12, ../scss/_footer.scss */
+/* line 17, ../scss/_footer.scss */
 .contact p {
   width: 464px;
   margin: 0 304px 0 0;
   font-size: 1.5em;
   float: left;
 }
-/* line 18, ../scss/_footer.scss */
+/* line 23, ../scss/_footer.scss */
 .contact .coordonnee {
   width: 464px;
   float: left;
@@ -903,43 +926,41 @@ footer h1 {
   display: block;
   clear: both;
 }
-/* line 23, ../scss/_footer.scss */
+/* line 28, ../scss/_footer.scss */
 .contact ul {
   clear: both;
   width: 624px;
-  margin: auto;
-  padding: 2em 0;
+  padding-bottom: 2em;
 }
-/* line 28, ../scss/_footer.scss */
+/* line 32, ../scss/_footer.scss */
 .contact ul li {
   list-style-type: none;
   display: inline-block;
 }
-/* line 30, ../scss/_footer.scss */
+/* line 34, ../scss/_footer.scss */
 .contact ul li img {
-  width: 144px;
-  border-radius: 72px;
+  width: 64px;
+  border-radius: 32px;
   opacity: 0.6;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 35, ../scss/_footer.scss */
+/* line 39, ../scss/_footer.scss */
 .contact ul li img:hover {
   opacity: 1;
   -moz-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
 }
-/* line 42, ../scss/_footer.scss */
+/* line 46, ../scss/_footer.scss */
 .contact ul li + li {
   margin-left: 16px;
 }
 
 /* line 1, ../scss/_listProjet.scss */
 .Projets {
-  padding-top: 2em;
   width: 1264px;
   margin: auto;
 }
@@ -1031,23 +1052,23 @@ footer h1 {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
   color: white;
-  text-decoration: none;
   padding: 1em 0;
   text-align: center;
+  text-decoration: none;
 }
-/* line 66, ../scss/_listProjet.scss */
+/* line 35, ../scss/_mixin.scss */
 .Projets li a:hover {
   background-color: #aa0202;
 }
-/* line 71, ../scss/_listProjet.scss */
+/* line 62, ../scss/_listProjet.scss */
 .Projets li + li {
   padding-left: 8px;
 }
-/* line 74, ../scss/_listProjet.scss */
+/* line 65, ../scss/_listProjet.scss */
 .Projets li:first-child {
   padding-right: 8px;
 }
-/* line 77, ../scss/_listProjet.scss */
+/* line 68, ../scss/_listProjet.scss */
 .Projets .single li {
   width: 100%;
   padding: 0px;
@@ -1056,7 +1077,7 @@ footer h1 {
 /* line 1, ../scss/_aboutMe.scss */
 .about {
   margin: 2em auto;
-  width: 864px;
+  width: 1264px;
 }
 /* line 10, ../scss/_mixin.scss */
 .about:after {
@@ -1067,20 +1088,41 @@ footer h1 {
 /* line 6, ../scss/_aboutMe.scss */
 .about h1 {
   font-family: 'merryweather', serif;
-  font-size: 2em;
+  font-size: 3em;
   padding: 0 0.5em;
   border-right: 2px solid #282828;
 }
 /* line 14, ../scss/_aboutMe.scss */
 .about div {
-  width: 384px;
+  width: 464px;
   margin-right: 16px;
   float: left;
   text-align: right;
 }
 /* line 21, ../scss/_aboutMe.scss */
 .about article {
-  width: 464px;
+  width: 784px;
   float: right;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/* line 1, ../scss/_contact.scss */
+.accrocheContact {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: italic;
+  width: 464px;
+  font-size: 2em;
+  margin-right: 80px;
+  margin-top: 4em;
+}
+/* line 5, ../scss/_contact.scss */
+.accrocheContact h1 {
   font-size: 1em;
+  margin: 0;
+}
+/* line 9, ../scss/_contact.scss */
+.accrocheContact p {
+  font-size: 0.75em;
 }

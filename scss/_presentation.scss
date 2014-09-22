@@ -5,7 +5,7 @@
         float:left;
     }
 }
-.aboutMe{
+.aboutMe, .contactPage{
     @include center_body();
     @include clearFloat;
     &>*{
@@ -13,22 +13,12 @@
     }
 }
 .accrocheAboutMe{
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    font-style: italic;
-    width:$col_6;
-    //float:left;
+    @include citation;
     margin-right:80px;
-    font-size: 2em;
     margin-top:6em;
 }
 .accroche{
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    font-style: italic;
-    width:$col_6;
-    //float:left;
+    @include citation;
     margin-left:80px;
-    font-size: 2em;
     margin-top:6em;
 }

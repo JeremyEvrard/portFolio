@@ -1,5 +1,5 @@
 .Projets{
-    padding-top: 2em;
+    //padding-top: 2em;
     @include center_body();
     h1{
         font-size:3em;
@@ -56,16 +56,7 @@
         float:left;
         a{
             width: 100%;
-            display:block;
-            background-color: rgba(170,2,2,0.5);
-            @include transition-duration(0.2s);
-            color:white;
-            text-decoration: none;
-            padding:1em 0;
-            text-align: center;
-            &:hover{
-                background-color: rgba(170,2,2,1);
-            }
+            @include redButton;
         }
     }
     li+li{

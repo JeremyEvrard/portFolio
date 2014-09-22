@@ -56,13 +56,22 @@
         position:absolute;
         text-align: center;
         width:100%;
+        height:0;
         a{
             position:relative;
             display:block;
             width:$col_4;
             margin:auto;
             z-index:2;
-        }  
+            top:-8em;
+            @include transition-duration(0.5s);
+            &:hover{
+                top:0;
+            }
+        }
+        img{
+        width:100%;       
+        }
     }
     .riban+nav{
         position:relative;

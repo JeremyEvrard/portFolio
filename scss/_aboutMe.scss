@@ -1,26 +1,27 @@
 .about{
-    //margin:12em auto 2em;
     margin:2em auto;
-    width:$col_11;
+    //margin:2em;
+    width:$body_width;
     @include clearFloat;
     h1{
         font-family: 'merryweather', serif;
-        font-size: 2em;
+        font-size: 3em;
         //color:white;
         padding:0 0.5em;
         border-right:2px solid $darkGrey;
         //background-color: $darkGrey;
     }
     div{
-        width:$col_5;
+        width:$col_6;
         //margin-left:$col_6;
         margin-right:$gutter;
         float:left;
         text-align: right;
     }
     article{
-        width:$col_6;
+        width:$col_10;
         float:right;
-        font-size: 1em;
+        font-size: 1.5em;
+        font-weight:400;
     }
 }
