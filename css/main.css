@@ -463,39 +463,169 @@ h1 {
   margin-left: 80px;
 }
 
-/* line 1, ../scss/_header.scss */
-header {
-  width: 100%;
+/* line 14, ../scss/_basic.scss */
+figure {
+  margin: 0;
 }
-/* line 3, ../scss/_header.scss */
-header .riban {
+
+/* line 17, ../scss/_basic.scss */
+.blind {
+  text-indent: -9999px;
+}
+
+/* line 1, ../scss/_header.scss */
+.simple {
+  width: 100%;
+  background-color: #282828;
+}
+/* line 4, ../scss/_header.scss */
+.simple nav {
+  width: 1264px;
+  margin: auto;
+  color: white;
+  height: 6em;
+}
+/* line 8, ../scss/_header.scss */
+.simple nav ul {
+  float: right;
+}
+/* line 11, ../scss/_header.scss */
+.simple nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+/* line 13, ../scss/_header.scss */
+.simple nav li a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.25em 10px;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  position: relative;
+  z-index: 3;
+}
+/* line 23, ../scss/_header.scss */
+.simple nav li a:hover {
+  border-bottom: 0.16em solid white;
+}
+/* line 30, ../scss/_header.scss */
+.simple .logo {
+  width: 464px;
+  float: left;
+}
+/* line 33, ../scss/_header.scss */
+.simple .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+/* line 37, ../scss/_header.scss */
+.simple .logo a:hover span {
+  text-decoration: underline;
+}
+/* line 41, ../scss/_header.scss */
+.simple .logo span {
+  padding: 1.25em 16px;
+  display: block;
+  float: left;
+}
+/* line 46, ../scss/_header.scss */
+.simple .logo img {
+  display: block;
+  float: left;
+  height: 3em;
+  margin-top: 0.66em;
+}
+
+/* line 54, ../scss/_header.scss */
+.home {
+  /*.uncentred{
+      @include center_body;
+      position:relative;
+      img{
+          position:absolute;
+          width:11.35646687697161%;   
+      }
+      &+nav{
+          @include center_body;
+          position:relative;
+          top:0;
+          //background-color: white;
+          height:6em;
+          z-index:0;
+          ul{
+          padding-left:11.35646687697161%;
+          }
+          li{
+              @include list_horizontal;
+              margin-left:$gutter;
+              a{
+                  color:black;
+                  font-size:2em;
+                  text-decoration: none;
+                  //@include box-sizing;
+                  display:inline-block;
+                  padding:0.75em 10px;
+                  @include transition_duration(0.2s);
+                  position:relative;
+                  z-index:3;
+                  &:hover{
+                      //text-decoration: underline;
+                      border-bottom: 0.16em solid $red;
+                      color:$red;
+                  }   
+              }
+          }
+      }  
+  }  */
+}
+/* line 55, ../scss/_header.scss */
+.home .riban {
   position: absolute;
   text-align: center;
   width: 100%;
+  height: 0;
 }
-/* line 7, ../scss/_header.scss */
-header .riban a {
+/* line 60, ../scss/_header.scss */
+.home .riban a {
   position: relative;
   display: block;
   width: 304px;
   margin: auto;
   z-index: 2;
+  top: -8em;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 16, ../scss/_header.scss */
-header nav {
+/* line 68, ../scss/_header.scss */
+.home .riban a:hover {
+  top: 0;
+}
+/* line 72, ../scss/_header.scss */
+.home .riban img {
+  width: 100%;
+}
+/* line 76, ../scss/_header.scss */
+.home .riban + nav {
   position: relative;
   top: 0;
   width: 100%;
   background-color: white;
   height: 6em;
 }
-/* line 22, ../scss/_header.scss */
-header nav li {
+/* line 82, ../scss/_header.scss */
+.home .riban + nav li {
   list-style-type: none;
   display: inline-block;
 }
-/* line 24, ../scss/_header.scss */
-header nav li a {
+/* line 84, ../scss/_header.scss */
+.home .riban + nav li a {
   color: black;
   font-size: 2em;
   text-decoration: none;
@@ -508,38 +638,38 @@ header nav li a {
   position: relative;
   z-index: 3;
 }
-/* line 34, ../scss/_header.scss */
-header nav li a:hover {
+/* line 94, ../scss/_header.scss */
+.home .riban + nav li a:hover {
   border-bottom: 0.16em solid #aa0202;
   color: #aa0202;
 }
-/* line 41, ../scss/_header.scss */
-header nav li:nth-child(3) a {
+/* line 101, ../scss/_header.scss */
+.home .riban + nav li:nth-child(3) a {
   margin-left: 384px;
 }
-/* line 44, ../scss/_header.scss */
-header nav li:nth-last-child(n+2) a {
+/* line 104, ../scss/_header.scss */
+.home .riban + nav li:nth-last-child(n+2) a {
   margin-right: 80px;
 }
-/* line 48, ../scss/_header.scss */
-header nav ul {
+/* line 108, ../scss/_header.scss */
+.home .riban + nav ul {
   width: 1264px;
   margin: auto;
 }
 
-/* line 53, ../scss/_header.scss */
+/* line 152, ../scss/_header.scss */
 .banniere {
   width: 100%;
   position: relative;
   color: white;
   background-color: #282828;
 }
-/* line 58, ../scss/_header.scss */
+/* line 157, ../scss/_header.scss */
 .banniere ul {
   width: 1264px;
   margin: auto;
 }
-/* line 60, ../scss/_header.scss */
+/* line 159, ../scss/_header.scss */
 .banniere ul li {
   list-style-type: none;
   display: inline-block;
@@ -548,7 +678,7 @@ header nav ul {
   font-size: 2em;
   text-align: center;
 }
-/* line 67, ../scss/_header.scss */
+/* line 166, ../scss/_header.scss */
 .banniere ul li + li {
   margin-left: 304px;
 }
@@ -570,14 +700,40 @@ header nav ul {
 }
 
 /* line 8, ../scss/_presentation.scss */
+.aboutMe, .contactPage {
+  width: 1264px;
+  margin: auto;
+}
+/* line 10, ../scss/_mixin.scss */
+.aboutMe:after, .contactPage:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 11, ../scss/_presentation.scss */
+.aboutMe > *, .contactPage > * {
+  float: right;
+}
+
+/* line 15, ../scss/_presentation.scss */
+.accrocheAboutMe {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: italic;
+  width: 464px;
+  font-size: 2em;
+  margin-right: 80px;
+  margin-top: 6em;
+}
+
+/* line 20, ../scss/_presentation.scss */
 .accroche {
   font-family: 'Merriweather', serif;
   font-weight: 300;
   font-style: italic;
   width: 464px;
-  float: left;
-  margin-left: 80px;
   font-size: 2em;
+  margin-left: 80px;
   margin-top: 6em;
 }
 
@@ -646,25 +802,28 @@ header nav ul {
 /* line 14, ../scss/_projetSection.scss */
 .projets > a {
   font-size: 1.5em;
+  width: 944px;
   display: block;
-  margin: 1em auto;
+  background-color: rgba(170, 2, 2, 0.5);
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  color: white;
+  padding: 1em 0;
   text-align: center;
-  width: 304px;
-  color: black;
+  text-decoration: none;
+  margin: 1em auto;
 }
-/* line 21, ../scss/_projetSection.scss */
-.projets > a:visited {
-  color: black;
-}
-/* line 24, ../scss/_projetSection.scss */
+/* line 35, ../scss/_mixin.scss */
 .projets > a:hover {
-  color: #aa0202;
+  background-color: #aa0202;
 }
 
-/* line 30, ../scss/_projetSection.scss */
+/* line 21, ../scss/_projetSection.scss */
 .projSlider {
-  width: 960px;
-  height: 720px;
+  width: 944px;
+  height: 708px;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -672,9 +831,9 @@ header nav ul {
   -webkit-box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
   box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
 }
-/* line 37, ../scss/_projetSection.scss */
+/* line 28, ../scss/_projetSection.scss */
 .projSlider ul {
-  width: 400%;
+  width: 300%;
   position: absolute;
   top: 0;
   left: 0;
@@ -691,13 +850,13 @@ header nav ul {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
-/* line 47, ../scss/_projetSection.scss */
+/* line 38, ../scss/_projetSection.scss */
 .projSlider li {
-  width: 25%;
+  width: 33.333333333%;
   list-style-type: none;
   display: inline-block;
 }
-/* line 51, ../scss/_projetSection.scss */
+/* line 42, ../scss/_projetSection.scss */
 .projSlider img {
   max-width: 100%;
 }
@@ -736,21 +895,27 @@ footer {
 footer h1 {
   margin-left: 0;
 }
+/* line 8, ../scss/_footer.scss */
+footer h2 {
+  clear: both;
+  font-weight: 300;
+  padding-top: 1.5em;
+}
 
-/* line 9, ../scss/_footer.scss */
+/* line 14, ../scss/_footer.scss */
 .contact {
   width: 1264px;
   margin: auto;
   padding-top: 1em;
 }
-/* line 12, ../scss/_footer.scss */
+/* line 17, ../scss/_footer.scss */
 .contact p {
   width: 464px;
   margin: 0 304px 0 0;
   font-size: 1.5em;
   float: left;
 }
-/* line 18, ../scss/_footer.scss */
+/* line 23, ../scss/_footer.scss */
 .contact .coordonnee {
   width: 464px;
   float: left;
@@ -761,36 +926,203 @@ footer h1 {
   display: block;
   clear: both;
 }
-/* line 23, ../scss/_footer.scss */
+/* line 28, ../scss/_footer.scss */
 .contact ul {
   clear: both;
   width: 624px;
-  margin: auto;
-  padding: 2em 0;
+  padding-bottom: 2em;
 }
-/* line 28, ../scss/_footer.scss */
+/* line 32, ../scss/_footer.scss */
 .contact ul li {
   list-style-type: none;
   display: inline-block;
 }
-/* line 30, ../scss/_footer.scss */
+/* line 34, ../scss/_footer.scss */
 .contact ul li img {
-  width: 144px;
-  border-radius: 72px;
+  width: 64px;
+  border-radius: 32px;
   opacity: 0.6;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 35, ../scss/_footer.scss */
+/* line 39, ../scss/_footer.scss */
 .contact ul li img:hover {
   opacity: 1;
   -moz-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
 }
-/* line 42, ../scss/_footer.scss */
+/* line 46, ../scss/_footer.scss */
 .contact ul li + li {
   margin-left: 16px;
+}
+
+/* line 1, ../scss/_listProjet.scss */
+.Projets {
+  width: 1264px;
+  margin: auto;
+}
+/* line 4, ../scss/_listProjet.scss */
+.Projets h1 {
+  font-size: 3em;
+}
+/* line 7, ../scss/_listProjet.scss */
+.Projets h2 {
+  margin-left: 80px;
+  font-weight: 400;
+  font-size: 2em;
+  font-family: 'merryweather', serif;
+  font-style: italic;
+}
+/* line 14, ../scss/_listProjet.scss */
+.Projets h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+/* line 10, ../scss/_mixin.scss */
+.Projets > section:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 21, ../scss/_listProjet.scss */
+.Projets > section section {
+  background-color: rgba(1, 1, 1, 0.1);
+  padding: 0 16px 16px;
+  float: left;
+  width: 624px;
+  margin-bottom: 1em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 29, ../scss/_listProjet.scss */
+.Projets > section section:hover {
+  -moz-box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
+  -webkit-box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
+  box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
+}
+/* line 33, ../scss/_listProjet.scss */
+.Projets > section section:nth-child(even) {
+  margin-right: 16px;
+}
+/* line 36, ../scss/_listProjet.scss */
+.Projets > section figure {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 20em;
+}
+/* line 41, ../scss/_listProjet.scss */
+.Projets > section p {
+  min-height: 6em;
+}
+/* line 44, ../scss/_listProjet.scss */
+.Projets > section img {
+  max-width: 100%;
+  max-height: 20em;
+  display: block;
+  margin: auto;
+}
+/* line 52, ../scss/_listProjet.scss */
+.Projets li {
+  list-style-type: none;
+  display: inline-block;
+  width: 50%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+/* line 57, ../scss/_listProjet.scss */
+.Projets li a {
+  width: 100%;
+  display: block;
+  background-color: rgba(170, 2, 2, 0.5);
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 35, ../scss/_mixin.scss */
+.Projets li a:hover {
+  background-color: #aa0202;
+}
+/* line 62, ../scss/_listProjet.scss */
+.Projets li + li {
+  padding-left: 8px;
+}
+/* line 65, ../scss/_listProjet.scss */
+.Projets li:first-child {
+  padding-right: 8px;
+}
+/* line 68, ../scss/_listProjet.scss */
+.Projets .single li {
+  width: 100%;
+  padding: 0px;
+}
+
+/* line 1, ../scss/_aboutMe.scss */
+.about {
+  margin: 2em auto;
+  width: 1264px;
+}
+/* line 10, ../scss/_mixin.scss */
+.about:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 6, ../scss/_aboutMe.scss */
+.about h1 {
+  font-family: 'merryweather', serif;
+  font-size: 3em;
+  padding: 0 0.5em;
+  border-right: 2px solid #282828;
+}
+/* line 14, ../scss/_aboutMe.scss */
+.about div {
+  width: 464px;
+  margin-right: 16px;
+  float: left;
+  text-align: right;
+}
+/* line 21, ../scss/_aboutMe.scss */
+.about article {
+  width: 784px;
+  float: right;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/* line 1, ../scss/_contact.scss */
+.accrocheContact {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: italic;
+  width: 464px;
+  font-size: 2em;
+  margin-right: 80px;
+  margin-top: 4em;
+}
+/* line 5, ../scss/_contact.scss */
+.accrocheContact h1 {
+  font-size: 1em;
+  margin: 0;
+}
+/* line 9, ../scss/_contact.scss */
+.accrocheContact p {
+  font-size: 0.75em;
 }

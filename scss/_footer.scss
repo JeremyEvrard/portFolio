@@ -5,6 +5,11 @@ footer{
     h1{
         margin-left:0;
     }
+    h2{
+        clear:both;
+        font-weight: 300;
+        padding-top:1.5em;
+    }
 }
 .contact{
     @include center_body;
@@ -23,13 +28,12 @@ footer{
     ul{
         clear:both;
         width:$col_8;
-        margin:auto;
-        padding:2em 0;
+        padding-bottom: 2em;
         li{
             @include list-horizontal;
             img{
-                width:$col_2;
-                border-radius:$col_2 / 2;
+                width:$col;
+                border-radius:$col / 2;
                 opacity:0.6;
                 @include transition-duration(0.2s);
                 &:hover{
