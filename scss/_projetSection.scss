@@ -25,7 +25,7 @@
     position:relative;
     overflow: hidden;
     @include single-box-shadow(0px,0px,15px,0,rgba(1,1,1,0.5));
-    ul{
+    .conteneur{
         width:300%;
         position: absolute;
         top:0;
@@ -35,7 +35,7 @@
         @include animation-iteration-count(infinite);
         @include animation-timing-function(ease-in-out);
     }
-    li{
+    article{
         width:33.333333333%;
         @include list_horizontal;
         position:relative;

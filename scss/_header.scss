@@ -56,13 +56,14 @@
         position:absolute;
         text-align: center;
         width:100%;
+        margin:0;
         a{
             position:relative;
             display:block;
             width:$col_4;
             margin:auto;
             z-index:2;
-            top:-8em;
+            top:-4em;
             @include transition-duration(0.5s);
             &:hover{
                 top:0;

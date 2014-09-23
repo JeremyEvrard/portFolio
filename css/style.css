@@ -588,29 +588,30 @@ figure {
   position: absolute;
   text-align: center;
   width: 100%;
+  margin: 0;
 }
-/* line 59, ../scss/_header.scss */
+/* line 60, ../scss/_header.scss */
 .home .riban a {
   position: relative;
   display: block;
   width: 304px;
   margin: auto;
   z-index: 2;
-  top: -8em;
+  top: -4em;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 67, ../scss/_header.scss */
+/* line 68, ../scss/_header.scss */
 .home .riban a:hover {
   top: 0;
 }
-/* line 71, ../scss/_header.scss */
+/* line 72, ../scss/_header.scss */
 .home .riban img {
   width: 100%;
 }
-/* line 75, ../scss/_header.scss */
+/* line 76, ../scss/_header.scss */
 .home .riban + nav {
   position: relative;
   top: 0;
@@ -618,11 +619,11 @@ figure {
   background-color: white;
   height: 6em;
 }
-/* line 81, ../scss/_header.scss */
+/* line 82, ../scss/_header.scss */
 .home .riban + nav span {
   display: inline-block;
 }
-/* line 83, ../scss/_header.scss */
+/* line 84, ../scss/_header.scss */
 .home .riban + nav span a {
   color: black;
   font-size: 2em;
@@ -636,38 +637,38 @@ figure {
   position: relative;
   z-index: 3;
 }
-/* line 93, ../scss/_header.scss */
+/* line 94, ../scss/_header.scss */
 .home .riban + nav span a:hover {
   border-bottom: 0.16em solid #aa0202;
   color: #aa0202;
 }
-/* line 100, ../scss/_header.scss */
+/* line 101, ../scss/_header.scss */
 .home .riban + nav span:nth-child(3) a {
   margin-left: 384px;
 }
-/* line 103, ../scss/_header.scss */
+/* line 104, ../scss/_header.scss */
 .home .riban + nav span:nth-last-child(n+2) a {
   margin-right: 80px;
 }
-/* line 107, ../scss/_header.scss */
+/* line 108, ../scss/_header.scss */
 .home .riban + nav .listing {
   width: 1264px;
   margin: auto;
 }
 
-/* line 151, ../scss/_header.scss */
+/* line 152, ../scss/_header.scss */
 .banniere {
   width: 100%;
   position: relative;
   color: white;
   background-color: #282828;
 }
-/* line 156, ../scss/_header.scss */
+/* line 157, ../scss/_header.scss */
 .banniere ul {
   width: 1264px;
   margin: auto;
 }
-/* line 158, ../scss/_header.scss */
+/* line 159, ../scss/_header.scss */
 .banniere ul li {
   list-style-type: none;
   display: inline-block;
@@ -676,7 +677,7 @@ figure {
   font-size: 2em;
   text-align: center;
 }
-/* line 165, ../scss/_header.scss */
+/* line 166, ../scss/_header.scss */
 .banniere ul li + li {
   margin-left: 304px;
 }
@@ -830,7 +831,7 @@ figure {
   box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
 }
 /* line 28, ../scss/_projetSection.scss */
-.projSlider ul {
+.projSlider .conteneur {
   width: 300%;
   position: absolute;
   top: 0;
@@ -849,14 +850,14 @@ figure {
   animation-timing-function: ease-in-out;
 }
 /* line 38, ../scss/_projetSection.scss */
-.projSlider li {
+.projSlider article {
   width: 33.333333333%;
   list-style-type: none;
   display: inline-block;
   position: relative;
 }
 /* line 42, ../scss/_projetSection.scss */
-.projSlider li:hover .info {
+.projSlider article:hover .info {
   opacity: 1;
 }
 /* line 46, ../scss/_projetSection.scss */
