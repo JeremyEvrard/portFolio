@@ -441,6 +441,32 @@ th {
 ________________________________________________________________________________
 
 */
+/* line 72, socialNetwork/*.png */
+.socialNetwork-sprite, .socialNetwork-Facebook, .socialNetwork-Linkedin, .socialNetwork-Rss, .socialNetwork-Twitter {
+  background-image: url('../images/socialNetwork-s2534e00375.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+.socialNetwork-Facebook {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+.socialNetwork-Linkedin {
+  background-position: 0 -304px;
+}
+
+/* line 84, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+.socialNetwork-Rss {
+  background-position: 0 -608px;
+}
+
+/* line 84, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+.socialNetwork-Twitter {
+  background-position: 0 -912px;
+}
+
 /*@for $i from 1 through $ncol{
     $col-$i : $i * $col + ($i - 1) * $gutter;
 }*/
@@ -970,30 +996,30 @@ footer h2 {
   width: 624px;
   padding-bottom: 2em;
 }
-/* line 32, ../scss/_footer.scss */
-.contact ul li {
+/* line 34, ../scss/_footer.scss */
+.contact li {
   list-style-type: none;
   display: inline-block;
 }
-/* line 34, ../scss/_footer.scss */
-.contact ul li img {
+/* line 36, ../scss/_footer.scss */
+.contact li a {
   width: 64px;
+  height: 64px;
   border-radius: 32px;
   opacity: 0.6;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  display: block;
+  text-indent: -9999px;
 }
-/* line 39, ../scss/_footer.scss */
-.contact ul li img:hover {
+/* line 45, ../scss/_footer.scss */
+.contact li a:hover {
   opacity: 1;
-  -moz-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
 }
-/* line 46, ../scss/_footer.scss */
-.contact ul li + li {
+/* line 51, ../scss/_footer.scss */
+.contact li + li {
   margin-left: 16px;
 }
 

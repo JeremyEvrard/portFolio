@@ -29,22 +29,26 @@ footer{
         clear:both;
         width:$col_8;
         padding-bottom: 2em;
-        li{
-            @include list-horizontal;
-            img{
-                width:$col;
-                border-radius:$col / 2;
-                opacity:0.6;
-                @include transition-duration(0.2s);
-                &:hover{
-                    opacity:1;
-                    @include single-box-shadow(0,0,5px,5px,rgba(255,255,255,0.5));
-                }
+        
+    }
+    li{
+        @include list-horizontal;
+        a{
+            width:$col;
+            height:$col;
+            border-radius:$col / 2;
+            opacity:0.6;
+            //background-size: cover;
+            @include transition-duration(0.2s);
+            display:block;
+            text-indent: -9999px;
+            &:hover{
+                opacity:1;
+                //@include single-box-shadow(0,0,5px,5px,rgba(255,255,255,0.5));
             }
-            
-        }
-        li+li{
-            margin-left:$gutter;
         }
     }
+    li+li{
+        margin-left:$gutter;
+    }    
 }
