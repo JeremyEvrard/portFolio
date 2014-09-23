@@ -793,11 +793,6 @@ figure {
     /*troisième*/
   }
 }
-/* line 12, ../scss/_projetSection.scss */
-.projets {
-  width: 1264px;
-  margin: auto;
-}
 /* line 14, ../scss/_projetSection.scss */
 .projets > a {
   font-size: 1.5em;
@@ -821,33 +816,19 @@ figure {
 
 /* line 21, ../scss/_projetSection.scss */
 .projSlider {
-  width: 944px;
-  height: 708px;
-  margin: auto;
+  width: 100%;
   position: relative;
   overflow: hidden;
-  -moz-box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
-  -webkit-box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
-  box-shadow: 0px 0px 15px 0 rgba(1, 1, 1, 0.5);
-}
-/* line 28, ../scss/_projetSection.scss */
-.projSlider .conteneur {
-  width: 300%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -moz-animation-name: Autoslide;
-  -webkit-animation-name: Autoslide;
-  animation-name: Autoslide;
-  -moz-animation-duration: 30s;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -moz-animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  /*.conteneur{
+      width:300%;
+      position: absolute;
+      top:0;
+      left:0;
+      @include animation-name(Autoslide);
+      @include animation-duration(30s);
+      @include animation-iteration-count(infinite);
+      @include animation-timing-function(ease-in-out);
+  }*/
 }
 /* line 38, ../scss/_projetSection.scss */
 .projSlider article {
@@ -859,13 +840,15 @@ figure {
 /* line 42, ../scss/_projetSection.scss */
 .projSlider article:hover .info {
   opacity: 1;
+  background-color: rgba(1, 1, 1, 0.5);
+  top: 0;
 }
-/* line 46, ../scss/_projetSection.scss */
+/* line 48, ../scss/_projetSection.scss */
 .projSlider img {
   max-width: 100%;
 }
 
-/* line 51, ../scss/_projetSection.scss */
+/* line 53, ../scss/_projetSection.scss */
 .info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -882,14 +865,10 @@ figure {
   transition-duration: 0.5s;
   display: block;
   left: 0;
-  top: 0;
-  padding: 3em 1em 0;
+  top: -16em;
+  padding: 1em;
 }
-/* line 67, ../scss/_projetSection.scss */
-.info p {
-  width: 624px;
-}
-/* line 70, ../scss/_projetSection.scss */
+/* line 72, ../scss/_projetSection.scss */
 .info a {
   display: block;
   background-color: rgba(170, 2, 2, 0.5);
@@ -909,14 +888,15 @@ figure {
 .info a:hover {
   background-color: #aa0202;
 }
-/* line 76, ../scss/_projetSection.scss */
+/* line 78, ../scss/_projetSection.scss */
 .info a + a {
   margin-right: 16px;
 }
-/* line 79, ../scss/_projetSection.scss */
+/* line 81, ../scss/_projetSection.scss */
 .info:hover {
   background-color: rgba(1, 1, 1, 0.5);
   opacity: 1;
+  top: 0;
 }
 
 /* line 1, ../scss/_lastSearch.scss */
