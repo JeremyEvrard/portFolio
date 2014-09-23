@@ -22,8 +22,8 @@
             //background-color: rgba(1,1,1,0.1);
             padding:0 $gutter $gutter;
             float:left;
-            width:$col_8;
-            margin-bottom:1em;
+            width:$col_8 - $gutter;
+            margin:0 $gutter 1em 0;
             @include box-sizing;
             @include transition-duration(0.2s);
         }
