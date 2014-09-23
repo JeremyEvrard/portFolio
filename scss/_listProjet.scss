@@ -19,7 +19,7 @@
     &>section{ 
         @include clearFloat;
         section{
-            background-color: rgba(1,1,1,0.1);
+            //background-color: rgba(1,1,1,0.1);
             padding:0 $gutter $gutter;
             float:left;
             width:$col_8;
@@ -40,7 +40,7 @@
         }
         img{
             max-width:100%;
-            max-height:20em;
+            max-height:30em;
             display:block;
             margin:auto;
         }
