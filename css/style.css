@@ -619,12 +619,11 @@ figure {
   height: 6em;
 }
 /* line 81, ../scss/_header.scss */
-.home .riban + nav li {
-  list-style-type: none;
+.home .riban + nav span {
   display: inline-block;
 }
 /* line 83, ../scss/_header.scss */
-.home .riban + nav li a {
+.home .riban + nav span a {
   color: black;
   font-size: 2em;
   text-decoration: none;
@@ -638,20 +637,20 @@ figure {
   z-index: 3;
 }
 /* line 93, ../scss/_header.scss */
-.home .riban + nav li a:hover {
+.home .riban + nav span a:hover {
   border-bottom: 0.16em solid #aa0202;
   color: #aa0202;
 }
 /* line 100, ../scss/_header.scss */
-.home .riban + nav li:nth-child(3) a {
+.home .riban + nav span:nth-child(3) a {
   margin-left: 384px;
 }
 /* line 103, ../scss/_header.scss */
-.home .riban + nav li:nth-last-child(n+2) a {
+.home .riban + nav span:nth-last-child(n+2) a {
   margin-right: 80px;
 }
 /* line 107, ../scss/_header.scss */
-.home .riban + nav ul {
+.home .riban + nav .listing {
   width: 1264px;
   margin: auto;
 }
