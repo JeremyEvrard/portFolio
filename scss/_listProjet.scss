@@ -26,9 +26,6 @@
             margin-bottom:1em;
             @include box-sizing;
             @include transition-duration(0.2s);
-            &:hover{
-                @include single-box-shadow(0,0,10px,3px,rgba(1,1,1,0.5));
-            }
         }
         section:nth-child(even){
             margin-right: $gutter;

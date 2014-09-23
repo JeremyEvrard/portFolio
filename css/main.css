@@ -1061,17 +1061,11 @@ footer h2 {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 29, ../scss/_listProjet.scss */
-.Projets > section section:hover {
-  -moz-box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
-  -webkit-box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
-  box-shadow: 0 0 10px 3px rgba(1, 1, 1, 0.5);
-}
-/* line 33, ../scss/_listProjet.scss */
+/* line 30, ../scss/_listProjet.scss */
 .Projets > section section:nth-child(even) {
   margin-right: 16px;
 }
-/* line 36, ../scss/_listProjet.scss */
+/* line 33, ../scss/_listProjet.scss */
 .Projets > section figure {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1079,18 +1073,18 @@ footer h2 {
   width: 100%;
   min-height: 20em;
 }
-/* line 41, ../scss/_listProjet.scss */
+/* line 38, ../scss/_listProjet.scss */
 .Projets > section p {
   min-height: 6em;
 }
-/* line 44, ../scss/_listProjet.scss */
+/* line 41, ../scss/_listProjet.scss */
 .Projets > section img {
   max-width: 100%;
   max-height: 20em;
   display: block;
   margin: auto;
 }
-/* line 52, ../scss/_listProjet.scss */
+/* line 49, ../scss/_listProjet.scss */
 .Projets li {
   list-style-type: none;
   display: inline-block;
@@ -1100,7 +1094,7 @@ footer h2 {
   box-sizing: border-box;
   float: left;
 }
-/* line 57, ../scss/_listProjet.scss */
+/* line 54, ../scss/_listProjet.scss */
 .Projets li a {
   width: 100%;
   display: block;
@@ -1118,15 +1112,15 @@ footer h2 {
 .Projets li a:hover {
   background-color: #aa0202;
 }
-/* line 62, ../scss/_listProjet.scss */
+/* line 59, ../scss/_listProjet.scss */
 .Projets li + li {
   padding-left: 8px;
 }
-/* line 65, ../scss/_listProjet.scss */
+/* line 62, ../scss/_listProjet.scss */
 .Projets li:first-child {
   padding-right: 8px;
 }
-/* line 68, ../scss/_listProjet.scss */
+/* line 65, ../scss/_listProjet.scss */
 .Projets .single li {
   width: 100%;
   padding: 0px;
