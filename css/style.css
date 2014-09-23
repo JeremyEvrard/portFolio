@@ -447,38 +447,38 @@ ________________________________________________________________________________
   background-repeat: no-repeat;
 }
 
-/* line 84, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Facebook {
   background-position: 0 0;
 }
-/* line 59, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Facebook:hover, .socialNetwork-Facebook.Facebook-hover {
   background-position: 0 -64px;
 }
 
-/* line 84, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Linkedin {
   background-position: 0 -128px;
 }
-/* line 59, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Linkedin:hover, .socialNetwork-Linkedin.Linkedin-hover {
   background-position: 0 -192px;
 }
 
-/* line 84, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Rss {
   background-position: 0 -256px;
 }
-/* line 59, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Rss:hover, .socialNetwork-Rss.Rss-hover {
   background-position: 0 -320px;
 }
 
-/* line 84, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Twitter {
   background-position: 0 -384px;
 }
-/* line 59, ../../../Program Files (x86)/Prepros/gems/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Twitter:hover, .socialNetwork-Twitter.Twitter-hover {
   background-position: 0 -448px;
 }
@@ -1158,25 +1158,53 @@ footer h2 {
 }
 /* line 3, ../scss/_viewProjet.scss */
 .articleProjet h2 {
-  text-align: center;
   font-family: 'merryWeather', serif;
+  font-size: 2em;
+  margin-bottom: 0.66em;
+}
+/* line 8, ../scss/_viewProjet.scss */
+.articleProjet p {
+  font-size: 1.5em;
 }
 
-/* line 10, ../scss/_viewProjet.scss */
-.intro figure {
-  text-align: center;
-  margin-top: 2em;
+/* line 10, ../scss/_mixin.scss */
+.intro:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-/* line 14, ../scss/_viewProjet.scss */
+/* line 15, ../scss/_viewProjet.scss */
+.intro figure {
+  margin-top: 2em;
+  width: 624px;
+  float: left;
+  display: block;
+  margin-right: 16px;
+}
+/* line 22, ../scss/_viewProjet.scss */
+.intro figure img {
+  width: 100%;
+}
+/* line 26, ../scss/_viewProjet.scss */
 .intro h2 {
   font-size: 3em;
   text-align: center;
+  width: 624px;
+  float: left;
 }
-/* line 19, ../scss/_viewProjet.scss */
+/* line 32, ../scss/_viewProjet.scss */
 .intro p {
   width: 624px;
   font-size: 1.5em;
+  margin-bottom: 3em;
+  float: left;
+}
+
+/* line 39, ../scss/_viewProjet.scss */
+.fonctionalite, .responsive {
+  width: 944px;
   margin: auto;
+  margin-bottom: 4em;
 }
 
 /* line 1, ../scss/_aboutMe.scss */
