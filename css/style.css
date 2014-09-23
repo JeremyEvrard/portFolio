@@ -1151,6 +1151,34 @@ footer h2 {
   padding: 0px;
 }
 
+/* line 1, ../scss/_viewProjet.scss */
+.articleProjet {
+  width: 1264px;
+  margin: auto;
+}
+/* line 3, ../scss/_viewProjet.scss */
+.articleProjet h2 {
+  text-align: center;
+  font-family: 'merryWeather', serif;
+}
+
+/* line 10, ../scss/_viewProjet.scss */
+.intro figure {
+  text-align: center;
+  margin-top: 2em;
+}
+/* line 14, ../scss/_viewProjet.scss */
+.intro h2 {
+  font-size: 3em;
+  text-align: center;
+}
+/* line 19, ../scss/_viewProjet.scss */
+.intro p {
+  width: 624px;
+  font-size: 1.5em;
+  margin: auto;
+}
+
 /* line 1, ../scss/_aboutMe.scss */
 .about {
   margin: 2em auto;
