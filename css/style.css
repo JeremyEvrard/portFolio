@@ -447,38 +447,38 @@ ________________________________________________________________________________
   background-repeat: no-repeat;
 }
 
-/* line 84, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Volumes/CodeKit  2.1.2/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Facebook {
   background-position: 0 0;
 }
-/* line 59, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, ../../../../../../../Volumes/CodeKit  2.1.2/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Facebook:hover, .socialNetwork-Facebook.Facebook-hover {
   background-position: 0 -64px;
 }
 
-/* line 84, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Volumes/CodeKit  2.1.2/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Linkedin {
   background-position: 0 -128px;
 }
-/* line 59, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, ../../../../../../../Volumes/CodeKit  2.1.2/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Linkedin:hover, .socialNetwork-Linkedin.Linkedin-hover {
   background-position: 0 -192px;
 }
 
-/* line 84, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Volumes/CodeKit  2.1.2/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Rss {
   background-position: 0 -256px;
 }
-/* line 59, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, ../../../../../../../Volumes/CodeKit  2.1.2/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Rss:hover, .socialNetwork-Rss.Rss-hover {
   background-position: 0 -320px;
 }
 
-/* line 84, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Volumes/CodeKit  2.1.2/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Twitter {
   background-position: 0 -384px;
 }
-/* line 59, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 59, ../../../../../../../Volumes/CodeKit  2.1.2/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
 .socialNetwork-Twitter:hover, .socialNetwork-Twitter.Twitter-hover {
   background-position: 0 -448px;
 }
@@ -1201,10 +1201,30 @@ footer h2 {
 }
 
 /* line 39, ../scss/_viewProjet.scss */
-.fonctionalite, .responsive {
+.textContent, .textWithImage {
   width: 944px;
   margin: auto;
   margin-bottom: 4em;
+}
+
+/* line 10, ../scss/_mixin.scss */
+.textWithImage:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 46, ../scss/_viewProjet.scss */
+.textWithImage figure {
+  width: 304px;
+  float: right;
+}
+/* line 49, ../scss/_viewProjet.scss */
+.textWithImage figure img {
+  width: 100%;
+}
+/* line 53, ../scss/_viewProjet.scss */
+.textWithImage p {
+  margin-right: 16px;
 }
 
 /* line 1, ../scss/_aboutMe.scss */

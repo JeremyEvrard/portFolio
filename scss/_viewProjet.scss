@@ -36,8 +36,23 @@
             float:left;
         }
 }
-.fonctionalite, .responsive{
+.textContent, .textWithImage{
     width:$col_12;
     margin:auto;
     margin-bottom: 4em;
+}
+.textWithImage{
+    @include clearFloat;
+    figure{
+        width:$col_4;
+        float:right;
+        img{
+            width:100%;
+        }
+    }
+    p{
+        //width:$col_6;
+        //float:left;
+        margin-right:$gutter;
+    }
 }
